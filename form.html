@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Please confirm your order</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="forms.css">
+        <link rel="stylesheet" href="home.css">
+        <script>
+            function validateForm() {
+                var country = document.forms["orderForm"]["country"].value;
+                var region = document.forms["orderForm"]["region"].value;
+                var firstName = document.forms["orderForm"]["first_name"].value;
+                var lastName = document.forms["orderForm"]["last_name"].value;
+                var phoneNumber = document.forms["orderForm"]["phone_number"].value;
+                var street = document.forms["orderForm"]["street"].value;
+                var zipCode = document.forms["orderForm"]["zip_code"].value;
+    
+                // Check if country is selected
+                if (country == "") {
+                    alert("Please select your country");
+                    return false;
+                }
+    
+                // Check if region is selected
+                if (region == "") {
+                    alert("Please select your region");
+                    return false;
+                }
+    
+                // Check if first name is filled out
+                if (firstName == "") {
+                    alert("Please enter your first name");
+                    return false;
+                }
+    
+                // Check if last name is filled out
+                if (lastName == "") {
+                    alert("Please enter your last name");
+                    return false;
+                }
+    
+                // Check if phone number is filled out
+                if (phoneNumber == "") {
+                    alert("Please enter your phone number");
+                    return false;
+                }
+    
+                // Check if street is filled out
+                if (street == "") {
+                    alert("Please enter your street");
+                    return false;
+                }
+    
+                // Check if zip code is filled out
+                if (zipCode == "") {
+                    alert("Please enter your ZIP code");
+                    return false;
+                }
+    
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <header>
+                <div class="four">
+                <img src="Rufa1.jpg" alt="Company Logo" id="image">
+                <h1>Rufa Design</h1> <br> 
+                </div>  
+            </header>
+            <button id="one" onclick="location.href='home.html'">Home</button> <button id="three" onclick="location.href='service.html'">Our Product</button><button type="button" id="two" onclick="location.href='contact.html'">Contact</button> <button type="button" id="three" onclick="location.href='about.html'">About Us</button>
+            <button onclick="location.href='login.html'" id="four">Login</button>
+            <button onclick="location.href='signup.html'" id="five">Sign Up</button>
+        </div>
+        <section>
+            <h1 class="one">Ordering Form</h1>
+            <form action="form.php" method="get" onsubmit="return validateForm()" name="orderForm">
+                <fieldset>
+                    <legend><b>Fill It Carefully</b></legend>
+                    <p><b>Country</b></p>
+                    <label>Select Your Country:</label>
+                    <select name="country">
+                        <option class="ethiopia" value="Ethiopia">Ethiopia</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Ertria">Ertria</option>
+                        <option value="Somalia">Somalia</option>
+                    </select>
+                    <br>
+                    <p><b>Region</b></p>
+                    <label>Select Your Region:</label>
+                    <select name="region">
+                        <option value="Oromia">Oromia</option>
+                        <option value="Amhara">Amhara</option>
+                        <option value="Tigrai">Tigrai</option>
+                        <option value="Addis Ababa">Addis Ababa</option>
+                        <option value="Afar">Afar</option>
+                        <option value="Somale">Somale</option>
+                        <option value="Dire Dawa">Dire Dawa</option>
+                        <option value="Harari">Harari</option>
+                        <option value="Gambela">Gambela</option>
+                        <option value="Benishangul Gumuz">Benishangul Gumuz</option>
+                    </select>
+                    <p><b>Personal Information</b></p>
+                    <label>First Name:</label>
+                    <input type="text" placeholder="First Name" name="first_name"> <br>
+                    <label>Last Name:</label>
+                    <input type="text" placeholder="Middle Name" name="last_name"> <br>
+                    <p><b>Contact Information</b></p>
+                    <label>Phone Number:</label>
+                    <input type="number" name="phone_number">
+                    <p><b>Address</b></p>
+                    <label>Please Enter Address</label>
+                    <input type="text" placeholder="Street" name="street"> <input type="text" name="kebele" placeholder="Kebele">
+                    <input type="text" name="state" placeholder="Please select a state"> <input type="text" name="town" placeholder="Please select a town">
+                    <input type="number" name="zip_code" placeholder="ZIP Code*"> <br>
+                    <button type="submit" name="submit" class="button">Confirm</button>
+                </fieldset>
+            </form>
+        
+        </section>
+        <footer>
+            <p>&copy; 2024 Rufa Design. All Rights Reserved!</p>
+        </footer>
+    </body>
+</html>

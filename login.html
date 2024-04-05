@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="home.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function validateForm() {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+    
+                // Username'n duwwaa ta'uu isaa mirkaneessuuf
+                if (username == "") {
+                    alert("Username must be filled out");
+                    return false;
+                }
+    
+                // Password'n duwwaa ta'u isaa mirkaneessuuf
+                if (password == "") {
+                    alert("Password must be filled out");
+                    return false;
+                }
+    
+                // Yoo wanti hundi guutame, dhugaa deebisa
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <header>
+                <div class="four">
+                <img src="Rufa1.jpg" alt="Company Logo" id="image">
+                <h1>Rufa Design</h1> <br> 
+                </div>  
+            </header>
+            <button id="one" onclick="location.href='home.html'">Home</button> <button id="three" onclick="location.href='service.html'">Our Product</button><button type="button" id="two" onclick="location.href='contact.html'">Contact</button> <button type="button" id="three" onclick="location.href='about.html'">About Us</button>
+            <button onclick="location.href='login.html'" id="four">Login</button>
+            <button onclick="location.href='signup.html'" id="five">Sign Up</button>
+        </div>
+        <fieldset>
+            <legend><b>Login Form</b></legend>
+            <form onsubmit="return validateForm()">
+                <label><b>Username:</b></label>
+                <input type="text" id="username" name="username"> <br> <br>
+                <label><b>Password:</b></label>
+                <input type="password" id="password" name="password">
+                    <br><br>
+                <button type="submit" value="Login">Login</button> <button type="reset">Cancel</button>
+            </form>
+            <p>Don't have an account? <a href="signup.html" target="_parent">Sign Up</a></p>
+        </fieldset>
+        <footer>
+            <p>&copy; 2024 Rufa Design. All Rights Reserved!</p>
+        </footer>
+    </body>
+</html>

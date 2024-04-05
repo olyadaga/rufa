@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e7b2b2;
+    backdrop-filter: blur(5px);
+
+}
+
+header, main, footer {
+    padding: 20px;
+}
+
+header {
+    color: #fff;
+    text-align: left;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    margin: 20px;
+    text-align: center;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+.price {
+    font-weight: bold;
+    color:#ff0202;
+}
+
+button {
+    background-color: #0f501f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+header img {
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+footer{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+h2{
+    color: #031a09;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #bdff07;
+}
+#one ,#two ,#three ,#four ,#five{
+    background-color: #f70303;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 50px;
+    width: 100px;
+    margin: 4px 2px;
+    vertical-align: middle;
+    position: relative; 
+    top: 20px; 
+    left: 35%;
+}
+.header {
+    background-color: #666464;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+}
+.header button:hover {
+    background-color: #45a049;
+}
+#image{
+    height: 65px;
+    width: 65px;
+}
+.button-container{
+    text-align: right;
+}

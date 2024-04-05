@@ -1,0 +1,54 @@
+*{
+    margin: auto;
+    background-image: url(cover2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+fieldset{
+    margin-top: 5%;
+    margin-bottom: 0%;
+    margin-left: 20%;
+    margin-right: 25%;
+    border-color: rgb(255, 255, 255);
+    color: aliceblue;
+}
+.one{
+    text-align: center;
+    color: red;
+    margin-top: 5%;
+}
+footer{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+form{
+    margin-top: 0%;
+    margin-left: 5%;
+    margin-bottom: 0%;
+    margin-right: 5%;
+    text-align: center;
+    padding: auto;
+}
+select{
+    color: rgb(253, 4, 4);
+}
+p{
+   text-align: left;
+   text-decoration: aqua;
+}
+input{
+    color: azure;
+    padding-left: 0%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.button {
+    background-color: #00ff40;
+    color: #fff;
+    border-style: solid;
+    border-radius: ;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}

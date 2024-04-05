@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(formcover.jpg);
+    background-size: cover;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.box4{
+    height: 600px;
+    width: 300px;
+    background-color: rgba(17, 16, 17, 0.905);
+    opacity: 80%;
+    position: absolute;
+    color: white;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    padding: 30px 30px;
+    border-radius: 30px;
+    
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 25px;
+}
+.err{
+    color: red;
+}
+.box4 input{
+    width: 100%;
+    margin: 5px;
+    color: white;
+    margin-left: 0px;
+}
+.box4 input[type="text"]{
+    border: none;
+    border-bottom: 1px solid white ;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    font-size: 15px;
+}
+.box4 input[type="number"]{
+    border: solid;
+    outline: none;
+    height: 40px;
+    background-color: aquamarine;
+    color:black;
+    border-radius: 0px;
+
+}
+.box4 input[type="date"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: aquamarine;
+    color:black;
+    border: 20px;
+    border-radius: 20px;
+
+}
+
+.box4 input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: aquamarine;
+    color:azure;
+    border: 20px;
+    border-radius: 20px;
+
+}
+.box4 input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #ffc107;
+}

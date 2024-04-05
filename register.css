@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(formcover.jpg);
+    background-size: cover;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.box3{
+    height: 500px;
+    width: 300px;
+    background-color: rgba(17, 16, 17, 0.905);
+    opacity: 80%;
+    position: absolute;
+    color: white;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    padding: 30px 30px;
+    border-radius: 30px;
+    
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 25px;
+}
+.err{
+    color: red;
+}
+.box3 input{
+    width: 100%;
+    margin: 10px;
+    color: white;
+    margin-left: 0px;
+}
+.box3 input[type="text"]{
+    border: none;
+    border-bottom: 1px solid white ;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    font-size: 15px;
+}
+
+.box3 input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: aquamarine;
+    color:azure;
+    border: 20px;
+    border-radius: 20px;
+
+}
+.box3 input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #ffc107;
+}
+/* Style for the header 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: #f0f0f0;
+}
+
+/* Style for the logo 
+#image {
+    width: 50px; /* Adjust the width as needed 
+    height: 50px;
+}
+
+/* Style for the company name 
+h1 {
+    margin-left: 10px; /* Add space between the logo and the company name 
+}
+
+/* Style for the buttons 
+#one, #two {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color 
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Add margin to the second button 
+#two {
+    margin-right: 50px;
+}
+
+h1{
+    color: black;
+}
+#one ,#two ,#three ,#four ,#five{
+    background-color: #40a350;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 50px;
+    width: 100px;
+    margin: 4px 2px;
+    vertical-align: middle;
+    position: relative; 
+    top: 20px; 
+    left: 35%;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.header {
+    background-color: #dacdcd;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+}
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+header img {
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.header button:hover {
+    background-color: #45a049;
+}
+#image{
+    height: 65px;
+    width: 65px;
+}
+.four{
+    display: inline-flex;
+    vertical-align: middle;
+    text-align: center;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
